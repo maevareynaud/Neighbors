@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">neighbors</string>
+    <string name="confirm_delete">Confirmation message</string>
+    <string name="message_delete">Do you want to delete this neighbor?</string>
+    <string name="ok">yes</string>
+    <string name="cancel">no</string>
+    <string name="adresse">Adress</string>
+    <string name="a_propos_de_moi">About me</string>
+    <string name="image">Image</string>
+    <string name="nom">Name</string>
+    <string name="t_l_phone">Phone</string>
+    <string name="webste">Website</string>
+    <string name="save">Save</string>
+    <string name="error">Invalid URL</string>
+    <string name="phone_error">Invalid number. Expected format: 06 or 07xxxxxxxx</string>
+    <string name="liste_neighbor_fragment">Neighbor list</string>
+    <string name="add_new_neighbor">New neighbor</string>
+</resources>

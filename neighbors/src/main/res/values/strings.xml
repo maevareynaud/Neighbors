@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">voisins</string>
+    <string name="confirm_delete">Confirmation message</string>
+    <string name="message_delete">Voulez-vous supprimer un voisin ?</string>
+    <string name="ok">oui</string>
+    <string name="cancel">non</string>
+    <string name="adresse">Adresse</string>
+    <string name="a_propos_de_moi">A propos de moi</string>
+    <string name="image">Image</string>
+    <string name="nom">Nom</string>
+    <string name="t_l_phone">Téléphone</string>
+    <string name="webste">Site web</string>
+    <string name="save">enregistrer</string>
+    <string name="error">Url invalide</string>
+    <string name="phone_error">Numéro invalide. Format attendu: 0xxxxxxxxx</string>
+    <string name="liste_neighbor_fragment">Liste des voisins</string>
+    <string name="add_new_neighbor">Nouveau voisin</string>
+</resources>

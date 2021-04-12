@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+
+    <data>
+
+        <import type="com.example.neighbors.models.Neighbor"/>
+
+        <variable
+            name="neighbor"
+            type="Neighbor"/>
+
+    </data>
+
+
+    <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="5dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="vertical">
+
+
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/barrier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:barrierDirection="bottom"
+                app:constraint_referenced_ids="item_list_desc, item_list_name, item_list_avatar" />
+
+            <ImageView
+                android:id="@+id/item_list_avatar"
+                android:layout_width="100dp"
+                app:avatar="@{neighbor.avatarUrl}"
+                android:layout_height="100dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/item_list_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@{neighbor.name}"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/item_list_avatar"
+                app:layout_constraintTop_toTopOf="@+id/item_list_avatar" />
+
+            <TextView
+                android:id="@+id/item_list_desc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:maxLines="10"
+                android:text="@{neighbor.aboutMe}"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/item_list_name"
+                app:layout_constraintTop_toBottomOf="@+id/item_list_name"
+                tools:text="@tools:sample/lorem/random" />
+
+            <ImageButton
+                android:id="@+id/item_list_like_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:background="@null"
+                app:favorite="@{neighbor.favorite}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/barrier"
+                app:srcCompat="@drawable/ic_baseline_favorite_border_24" />
+
+            <ImageButton
+                android:id="@+id/item_list_delete_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:background="@null"
+                app:layout_constraintEnd_toStartOf="@+id/item_list_like_button"
+                app:layout_constraintTop_toBottomOf="@+id/barrier"
+                app:srcCompat="@drawable/ic_baseline_delete_24" />
+
+            <ImageButton
+                android:id="@+id/item_list_website_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:background="@null"
+                app:layout_constraintEnd_toStartOf="@+id/item_list_delete_button"
+                app:layout_constraintTop_toBottomOf="@+id/barrier"
+                app:srcCompat="@drawable/ic_baseline_link_24" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</layout>
