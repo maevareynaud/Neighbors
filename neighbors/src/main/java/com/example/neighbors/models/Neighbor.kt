@@ -9,4 +9,4 @@ data class Neighbor(
     val aboutMe: String,
     var favorite: Boolean,
     val webSite: String
-)
+) 

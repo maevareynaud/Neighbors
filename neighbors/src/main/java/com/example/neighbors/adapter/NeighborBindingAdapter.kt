@@ -34,4 +34,6 @@ object NeighborBindingAdapter {
             imageButton.setImageResource(R.drawable.ic_baseline_favorite_border_24)
         }
     }
+
+
 }

@@ -41,6 +41,11 @@ class ListNeighborsAdapter(
         holder.binding.itemListWebsiteButton.setOnClickListener {
             mNeighboursHandler.onWebsiteButton(neighbour)
         }
+
+        // Intercepter le click sur le voisin
+        holder.binding.itemListAvatar.setOnClickListener {
+            mNeighboursHandler.onSingleNeighbor(neighbour)
+        }
     }
 
     override fun getItemCount(): Int {

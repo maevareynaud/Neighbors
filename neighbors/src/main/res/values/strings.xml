@@ -15,4 +15,6 @@
     <string name="phone_error">Numéro invalide. Format attendu: 0xxxxxxxxx</string>
     <string name="liste_neighbor_fragment">Liste des voisins</string>
     <string name="add_new_neighbor">Nouveau voisin</string>
+    <string name="non_persistent">Non persistent</string>
+    <string name="persistent">Persistent</string>
 </resources>
